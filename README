@@ -1,0 +1,52 @@
+Nickname Generator
+This is a simple nickname generator script written in JavaScript that creates random and funny nicknames for use in online games or any other application where unique and creative names are needed.
+
+Features
+Generates nicknames using a combination of random words, numbers, and special characters.
+Supports both English and Portuguese languages for word selection.
+Configurable settings for customizing the nickname generation process.
+Saves generated nicknames to a text file with timestamp in the files/generated/ directory.
+
+Installation
+Clone this repository to your local environment.
+
+In the project directory, run the following command to install the necessary dependencies:
+
+npm install moment
+
+Edit the config.json file to customize the nickname generation settings according to your preferences:
+json
+
+{
+  "numWords": 2,
+  "numSpecialChars": 1,
+  "numDigits": 2,
+  "language": "english",
+  "separator": "_",
+  "useLetters": true,
+  "useNumbers": true,
+  "useSpecialChars": false,
+  "numGenerated": 10,
+  "wordListEnglish": [
+    // Add your list of English words here
+  ],
+  "wordListPortuguese": [
+    // Add your list of Portuguese words here
+  ]
+}
+
+Run the script:
+
+node generator.js
+
+Check the files/generated/ directory for the generated nicknames saved in a text file with the current timestamp.
+Customization
+numWords: Number of words to include in the generated nickname.
+numSpecialChars: Number of special characters to include in the generated nickname.
+numDigits: Number of digits to include in the generated nickname.
+language: Language for word selection (english or portuguese).
+separator: Character used to separate words in the generated nickname.
+useLetters: Set to true to include letters in the generated nickname.
+useNumbers: Set to true to include numbers in the generated nickname.
+useSpecialChars: Set to true to include special characters in the generated nickname.
+numGenerated: Number of nicknames to generate and save.
